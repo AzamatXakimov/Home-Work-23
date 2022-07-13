@@ -230,6 +230,7 @@ body{
 }
 
 .our_collection-item {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -240,9 +241,11 @@ body{
     padding-top: 121px;
     padding-right: 157px;
     padding-bottom: 120px;
-    padding-left: 165px;
+    padding-left: 567px;
 }
 .our_collection-item:nth-child(2n){
+    padding-right: 567px;
+    padding-left: 157px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -256,9 +259,9 @@ body{
     background-position: left center;
 }
 .our_collection-item:nth-child(1):before{
-    position: relative;
-    right: 520px;
-    bottom: 150px;
+    position: absolute;
+    left: -350px;
+    top: -115px;
     z-index: 4;
     display: inline-block;
     width: 402px;
@@ -276,12 +279,12 @@ body{
     background-position: right center;
 }
 .our_collection-item:nth-child(2):before{
-    position: relative;
-    left: 570px;
-    bottom: -220px;
+    position: absolute;
+    right: -405px;
+    bottom: -280px;
     z-index: 4;
     display: inline-block;
-    width: 402px;
+    width: 392px;
     height: 477px;
     background-image: url("../images/sheet-2-1.svg"), url("../images/sheet-2-2.svg");
     background-repeat: no-repeat;
@@ -290,7 +293,6 @@ body{
     content: "";
 }
 .our_collection-item:nth-child(3){
-    padding-left: 567px;
     background-image: url("../images/gran-espresso.png");
     background-repeat: no-repeat;
     background-size: 450px 375px;
@@ -304,9 +306,9 @@ body{
     background-position: right center;
 }
 .our_collection-item:nth-child(4):before{
-    position: relative;
-    right: 985px;
-    bottom: 115px;
+    position: absolute;
+    left: -430px;
+    top: -55px;
     z-index: 4;
     display: inline-block;
     width: 402px;
