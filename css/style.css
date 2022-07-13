@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --main-font-family: "Roboto", "Arial", sans-serif;
     --main-regular-font-weight: 400;
@@ -39,7 +46,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 img{
@@ -66,8 +74,12 @@ body{
 }
 
 .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-logo {
@@ -83,8 +95,12 @@ body{
 } */
 
 .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     padding: 0;
     list-style: none; 
@@ -131,7 +147,9 @@ body{
     /* background-size: 160px 160px; */
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateX(-67px) translateY(-55px);
+    -webkit-transform: translateX(-67px) translateY(-55px);
+        -ms-transform: translateX(-67px) translateY(-55px);
+            transform: translateX(-67px) translateY(-55px);
     content: "";
 }
 .hero-img{
@@ -212,8 +230,12 @@ body{
 }
 
 .our_collection-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding-top: 121px;
     padding-right: 157px;
@@ -221,7 +243,10 @@ body{
     padding-left: 165px;
 }
 .our_collection-item:nth-child(2n){
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .our_collection-item:nth-child(1){
