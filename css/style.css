@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --main-font-family: "Roboto", "Arial", sans-serif;
     --main-regular-font-weight: 400;
@@ -237,27 +244,20 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    padding-top: 121px;
-    padding-right: 157px;
-    padding-bottom: 120px;
-    padding-left: 567px;
+    max-width: 1114px;
+    margin: 0 auto;
 }
 .our_collection-item:nth-child(2n){
-    padding-right: 567px;
-    padding-left: 157px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse ;
+            flex-direction: row-reverse ;
+}
+.our_collection-item:nth-child(2n) .our_collection-item-textbox {
+    margin-right: 117px;
+    margin-left: 157px;
 }
 
-.our_collection-item:nth-child(1){
-    background-image: url("../images/danche.png");
-    background-repeat: no-repeat;
-    background-size: 450px 375px;
-    background-position: left center;
-}
 .our_collection-item:nth-child(1):before{
     position: absolute;
     left: -350px;
@@ -271,12 +271,6 @@ body{
     background-position: center;
     background-size: 402px 300px;
     content: "";
-}
-.our_collection-item:nth-child(2){
-    background-image: url("../images/gran-espresso.png");
-    background-repeat: no-repeat;
-    background-size: 450px 375px;
-    background-position: right center;
 }
 .our_collection-item:nth-child(2):before{
     position: absolute;
@@ -292,19 +286,7 @@ body{
     background-size: 392px 477px, 253px 215px;
     content: "";
 }
-.our_collection-item:nth-child(3){
-    background-image: url("../images/gran-espresso.png");
-    background-repeat: no-repeat;
-    background-size: 450px 375px;
-    background-position: left center;
-}
 
-.our_collection-item:nth-child(4){
-    background-image: url("../images/planalto.png");
-    background-repeat: no-repeat;
-    background-size: 450px 375px;
-    background-position: right center;
-}
 .our_collection-item:nth-child(4):before{
     position: absolute;
     left: -430px;
@@ -320,8 +302,12 @@ body{
     content: "";
 }
 
+
+
 .our_collection-item-textbox{
     width: 390px;
+    margin-right: 157px;
+    margin-left: 117px;
 }
 
 .our_collection-item-text{
